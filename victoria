@@ -1,4 +1,9 @@
 #!/bin/bash
+#Test bash functioning and voice
 
 clear
+
 ls
+
+echo "Victoria Test"
+say -v Vicki "The quick brown fox jumped over the lazy dog"
