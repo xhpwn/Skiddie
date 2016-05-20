@@ -1,13 +1,13 @@
 #!/usr/bin/env ruby
-# Terminalady Ruby Script Unix Shebang
+#Skiddie
 
 =begin
     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     +                                                                   +
-    +    @Terminalady                                                   +
+    +    @Skiddie                                                       +
     +    @author Anubhav Saxena (xhpwn), |anubhav@saxena.xyz|           +
-    +    @desc A lady in the terminal. Speaks to user and assists       +
-    +          newbie bash users use commands easily.                   +
+    +    @desc Tests Victoria and Bash integration.                     +
+    +                                                                   +
     +                                                                   +
     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 =end
@@ -21,3 +21,9 @@ system "echo \"How may I help you? \(Type \'h\' for a list of helpful commands\)
 system "say -v Vicki \"How may I help you?\""
 
 command = gets.chomp
+
+case command
+when "h", "help"
+    system "ls"
+end
+
